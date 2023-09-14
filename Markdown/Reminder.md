@@ -46,13 +46,14 @@ a line break
 ### Styling
 |Style|Syntax|Example|Output|
 |-----|------|-------|------|
-|Bold|`** **` or `__ __`|`**This is bold text**`|**This is bold text**|
-|Italic|`* *` or `_ _`|`_This text is italicized_`|_This text is italicized_|
-|Strikethrough|`~~ ~~`|`~~This was mistaken text~~`|~~This was mistaken text~~|
-|All bold and italic|`*** ***`|`***All this text is important***`|***All this text is important***|
-|Superscript|`<sup> </sup>`|`This is a <sup>superscript</sup> text`|This is a <sup>superscript</sup> text|
-|Subscript|`<sub> </sub>`|`This is a <sub>subscript</sub> text`|This is a <sub>subscript</sub> text|
-|Emoji|`:EMOJICODE:`|`I am happy :smile:`|I am happy :smile:|
+|Bold|`** **` or `__ __`|\*\*This is bold text\*\*`|**This is bold text**|
+|Italic|`* *` or `_ _`|\_This text is italicized\_|_This text is italicized_|
+|Inline Code|<code>\` \`</code>|\`This is inline code\`|`This is inline code`|
+|Strikethrough|`~~ ~~`|\~\~This was mistaken text\~\~|~~This was mistaken text~~|
+|Bold and Italic|`*** ***`|\*\*\*All this text is important\*\*\*|***All this text is important***|
+|Superscript|`<sup> </sup>`|This is a \<sup>superscript\</sup> text|This is a <sup>superscript</sup> text|
+|Subscript|`<sub> </sub>`|This is a \<sub>subscript\</sub> text|This is a <sub>subscript</sub> text|
+|Emoji|`:EMOJICODE:`|I am happy \:smile:|I am happy :smile:|
 
 ---
 
@@ -204,8 +205,6 @@ You can add text within a collapsed section.
 ### Code Blocks
 **Example**
 ````
-`Inline code`
-
 ```
 Multiple lines
 of code
@@ -218,8 +217,6 @@ std::cout << "Hello World!";
 ````
 
 **Output**
-
-`Inline code`
 
 ```
 Multiple lines
