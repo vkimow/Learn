@@ -1,16 +1,21 @@
-# Markdown Reminder (_CHEAT SHEET_)
+# Markdown Reminder
+
 ## Essential
+
 ### Headings
+
 ```
 # Heading 1
 ## Heading 2
 ### Heading 3
 ...
 ```
+
 ---
 
 ### Paragraphs
-**Example**
+
+#### Example
 
 ```
 Will be same paragraph
@@ -18,7 +23,8 @@ if only one new line used
 
 New paragraph if two or more new lines are used
 ```
-**Output**
+
+#### Output
 
 Will be same paragraph
 if only one new line used
@@ -28,29 +34,32 @@ New paragraph if two or more new lines are used
 ---
 
 ### Line Breaks
-**Example**
+
+#### Example
 
 ```
 Two spaces␣␣
 at end of line will make
 a line break
 ```
-**Output**
 
-Two spaces
+#### Output
+
+Two spaces  
 at end of line will make
 a line break
 
 ---
 
 ### Styling
+
 |Style|Syntax|Example|Output|
 |-----|------|-------|------|
 |Bold|`** **` or `__ __`|\*\*This is bold text\*\*`|**This is bold text**|
 |Italic|`* *` or `_ _`|\_This text is italicized\_|_This text is italicized_|
 |Inline Code|<code>\` \`</code>|\`This is inline code\`|`This is inline code`|
 |Strikethrough|`~~ ~~`|\~\~This was mistaken text\~\~|~~This was mistaken text~~|
-|Bold and Italic|`*** ***`|\*\*\*All this text is important\*\*\*|***All this text is important***|
+|Bold and Italic|`*** ***`|\*\*\*All this text is important\*\*\*|_**All this text is important**_|
 |Superscript|`<sup> </sup>`|This is a \<sup>superscript\</sup> text|This is a <sup>superscript</sup> text|
 |Subscript|`<sub> </sub>`|This is a \<sub>subscript\</sub> text|This is a <sub>subscript</sub> text|
 |Emoji|`:EMOJICODE:`|I am happy \:smile:|I am happy :smile:|
@@ -58,13 +67,15 @@ a line break
 ---
 
 ### Quoting
-**Example**
+
+#### Example
 
 ```
 > This is a quote
 >> Nested Quote
 ```
-**Output**
+
+#### Output
 
 > This is a quote
 >> Nested Quote
@@ -72,7 +83,8 @@ a line break
 ---
 
 ### Ordered List
-**Example**
+
+#### Example
 
 ```
 1. Ordered
@@ -80,7 +92,8 @@ a line break
     1. Numbers
     1. Don't matter
 ```
-**Output**
+
+#### Output
 
 1. Ordered
 2. List
@@ -90,7 +103,8 @@ a line break
 ---
 
 ### Unordered List
-**Example**
+
+#### Example
 
 ```
 * Unordered
@@ -99,27 +113,30 @@ a line break
     + Plus sign
     - Dash
 ```
-**Output**
+
+#### Output
 
 * Unordered
 * List
-    * Asterisk
-    + Plus sign
-    - Dash
+  * Asterisk
+  * Plus sign
+  * Dash
 
 ---
 
 ### Checklist
-**Example**
+
+#### Example
 
 ```
 - [ ] Must include space
 - [x] Completed
 ```
-**Output**
 
-- [ ] Must include space
-- [x] Completed
+#### Output
+
+* [ ] Must include space
+* [x] Completed
 
 ---
 
@@ -133,20 +150,22 @@ a line break
 ---
 
 ### Images
-**Example**
+
+#### Example
 
 ```
 ![Image](https://myoctocat.com/assets/images/base-octocat.svg)
 ```
 
-**Output**
+#### Output
 
 ![Image](https://myoctocat.com/assets/images/base-octocat.svg)
 
 ---
 
 ### Tables
-**Example**
+
+#### Example
 
 ```
 | First Header  | Second Header |
@@ -160,7 +179,7 @@ a line break
 | git diff     | git diff       | git diff      |
 ```
 
-**Output**
+#### Output
 
 | First Header  | Second Header |
 |-|-|
@@ -175,7 +194,8 @@ a line break
 ---
 
 ### Collapsed section
-**Example**
+
+#### Example
 
 ```
 <details>
@@ -188,7 +208,8 @@ You can add text within a collapsed section.
 
 </details>
 ```
-**Output**
+
+#### Output
 
 <details>
 
@@ -203,7 +224,9 @@ You can add text within a collapsed section.
 ---
 
 ### Code Blocks
-**Example**
+
+#### Example
+
 ````
 ```
 Multiple lines
@@ -216,7 +239,7 @@ std::cout << "Hello World!";
 ```
 ````
 
-**Output**
+#### Output
 
 ```
 Multiple lines
@@ -227,10 +250,14 @@ of code
 // Some c++ highlighted syntax
 std::cout << "Hello World!";
 ```
+
+---
 
 ## Github
+
 ### Footnotes
-**Example**
+
+#### Example
 
 ```
 Here is a simple footnote[^1].
@@ -242,20 +269,21 @@ A footnote can also have multiple lines[^2].
   This is a second line.
 ```
 
-**Output**
+#### Output
 
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].
 
 [^1]: My reference.
-[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.  
   This is a second line.
 
 ---
 
 ### Alerts
-**Example**
+
+#### Example
 
 ```
 > [!NOTE]
@@ -268,7 +296,7 @@ A footnote can also have multiple lines[^2].
 > Critical content demanding immediate user attention due to potential risks.
 ```
 
-**Output**
+#### Output
 
 > [!NOTE]
 > Highlights information that users should take into account, even when skimming.
