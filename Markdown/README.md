@@ -1,57 +1,24 @@
 # Markdown Reminder
 
-## Essential
+## Headings
 
-### Headings
+To create a heading, add one to six <kbd>#</kbd> symbols before your heading text. The number of <kbd>#</kbd> you use will determine the hierarchy level and typeface size of the heading.
 
-```
+```markdown
 # Heading 1
 ## Heading 2
 ### Heading 3
-...
 ```
 
----
+## Paragraphs
 
-### Paragraphs
+You can create a new paragraph by leaving a blank line between lines of text.
 
-#### Example
+## Line Breaks
 
-```
-Will be same paragraph
-if only one new line used
+Two spaces  at end of line will make a line break
 
-New paragraph if two or more new lines are used
-```
-
-#### Output
-
-Will be same paragraph
-if only one new line used
-
-New paragraph if two or more new lines are used
-
----
-
-### Line Breaks
-
-#### Example
-
-```
-Two spaces␣␣
-at end of line will make
-a line break
-```
-
-#### Output
-
-Two spaces  
-at end of line will make
-a line break
-
----
-
-### Styling
+## Styling
 
 |Style|Syntax|Example|Output|
 |-----|------|-------|------|
@@ -64,49 +31,43 @@ a line break
 |Subscript|`<sub> </sub>`|This is a \<sub>subscript\</sub> text|This is a <sub>subscript</sub> text|
 |Emoji|`:EMOJICODE:`|I am happy \:smile:|I am happy :smile:|
 
----
+## Quoting
 
-### Quoting
+Example
 
-#### Example
-
-```
+```markdown
 > This is a quote
 >> Nested Quote
 ```
 
-#### Output
+Output
 
 > This is a quote
 >> Nested Quote
 
----
+## Ordered List
 
-### Ordered List
+Example
 
-#### Example
-
-```
+```markdown
 1. Ordered
 2. List
     1. Numbers
-    1. Don't matter
+    2. Don't matter
 ```
 
-#### Output
+Output
 
 1. Ordered
 2. List
     1. Numbers
-    1. Don't matter
+    2. Don't matter
 
----
+## Unordered List
 
-### Unordered List
+Example
 
-#### Example
-
-```
+```markdown
 * Unordered
 * List
     * Asterisk
@@ -114,7 +75,7 @@ a line break
     - Dash
 ```
 
-#### Output
+Output
 
 * Unordered
 * List
@@ -122,52 +83,44 @@ a line break
   * Plus sign
   * Dash
 
----
+## Checklist
 
-### Checklist
+Example
 
-#### Example
-
-```
+```markdown
 - [ ] Must include space
 - [x] Completed
 ```
 
-#### Output
+Output
 
 * [ ] Must include space
 * [x] Completed
 
----
-
-### Linking
+## Linking
 
 |Type|Example|Output|
 |----|-------|------|
 |URL|`[GitHub](https://github.com/)`|[GitHub](https://github.com/)|
 |Relative|`[Other](docs/Other.md)`|[Other](docs/Other.md)|
 
----
+## Images
 
-### Images
+Example
 
-#### Example
-
-```
+```markdown
 ![Image](https://myoctocat.com/assets/images/base-octocat.svg)
 ```
 
-#### Output
+Output
 
 ![Image](https://myoctocat.com/assets/images/base-octocat.svg)
 
----
+## Tables
 
-### Tables
+Example
 
-#### Example
-
-```
+```markdown
 | First Header  | Second Header |
 |-|-|
 | Content | Content |
@@ -179,7 +132,7 @@ a line break
 | git diff     | git diff       | git diff      |
 ```
 
-#### Output
+Output
 
 | First Header  | Second Header |
 |-|-|
@@ -191,13 +144,11 @@ a line break
 | git status   | git status     | git status    |
 | git diff     | git diff       | git diff      |
 
----
+## Collapsed section
 
-### Collapsed section
+Example
 
-#### Example
-
-```
+```markdown
 <details>
 
 <summary>Tips for collapsed sections</summary>
@@ -209,7 +160,7 @@ You can add text within a collapsed section.
 </details>
 ```
 
-#### Output
+Output
 
 <details>
 
@@ -221,13 +172,11 @@ You can add text within a collapsed section.
 
 </details>
 
----
+## Code Blocks
 
-### Code Blocks
+Example
 
-#### Example
-
-````
+````markdown
 ```
 Multiple lines
 of code
@@ -239,9 +188,9 @@ std::cout << "Hello World!";
 ```
 ````
 
-#### Output
+Output
 
-```
+```text
 Multiple lines
 of code
 ```
@@ -251,15 +200,11 @@ of code
 std::cout << "Hello World!";
 ```
 
----
+## Footnotes
 
-## Github
+Example
 
-### Footnotes
-
-#### Example
-
-```
+```markdown
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].
@@ -269,7 +214,7 @@ A footnote can also have multiple lines[^2].
   This is a second line.
 ```
 
-#### Output
+Output
 
 Here is a simple footnote[^1].
 
@@ -279,13 +224,11 @@ A footnote can also have multiple lines[^2].
 [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.  
   This is a second line.
 
----
+## Alerts
 
-### Alerts
+Example
 
-#### Example
-
-```
+```markdown
 > [!NOTE]
 > Highlights information that users should take into account, even when skimming.
 
@@ -296,7 +239,7 @@ A footnote can also have multiple lines[^2].
 > Critical content demanding immediate user attention due to potential risks.
 ```
 
-#### Output
+Output
 
 > [!NOTE]
 > Highlights information that users should take into account, even when skimming.
@@ -306,5 +249,4 @@ A footnote can also have multiple lines[^2].
 
 > [!WARNING]
 > Critical content demanding immediate user attention due to potential risks.
-
----
+>
